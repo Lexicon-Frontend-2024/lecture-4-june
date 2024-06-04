@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS GRID</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo"
+            src="data:image/png;base64,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"
+            alt="logo">
+        <a class="home" href="">HOME</a>
+        <a class="about" href="">ABOUT</a>
+        <a class="contact" href="">CONTACT</a>
+    </header>
+    <main>
+        <section class="grid-container">
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+            <article class="card last-box">
+                <h3>Hello</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>

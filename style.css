@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: grid;
+    grid-template-areas: "logo . . . . . home about contact";
+    grid-template-columns: repeat(9, 1fr);
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    grid-area: logo;
+    width: 100px;
+}
+.home {
+    grid-area: home;
+}
+.about {
+    grid-area: about;
+}
+.contact {
+    grid-area: contact;
+}
+.home, .logo, .about, .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-container {
+    border: 2px solid teal;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, min-content);
+}
+
+.card {
+    background-color: hotpink;
+    padding: 0.5rem;
+}
+
+.card.last-box {
+    background-color: aqua;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
